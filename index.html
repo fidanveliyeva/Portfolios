@@ -159,6 +159,40 @@
                 const navbar = document.querySelector(".dropdown")
                 navbar.style.transform = "translateY(-500px)"
             }
+
+        //    cv button
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const downloadButton = document.createElement("button");
+    downloadButton.textContent = "Download CV";
+    downloadButton.style.backgroundColor = "#3182ce";
+    downloadButton.style.color = "white";
+    downloadButton.style.border = "none";
+    downloadButton.style.padding = "10px 20px";
+    downloadButton.style.fontSize = "16px";
+    downloadButton.style.cursor = "pointer";
+    downloadButton.style.borderRadius = "5px";
+    
+    downloadButton.addEventListener("click", function () {
+        const fileUrl = "./my-cv/Fidan Valiyeva CV.pdf";  // Ensure this path is correct
+        const link = document.createElement("a");
+        link.href = fileUrl;
+        link.download = "Fidan Valiyeva CV.pdf";  // Only the file name here
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+
+    const container = document.createElement("div");
+    container.style.display = "flex";
+    container.style.justifyContent = "center";
+    container.style.marginTop = "20px";
+    container.appendChild(downloadButton);
+    
+    document.body.appendChild(container);  // Appending the container to the body
+});
+
         </script>
 </body>
 </html>
