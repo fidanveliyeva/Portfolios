@@ -1,75 +1,164 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-        <title>Fidan's Personal Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    </head>
-    <body>
-        <nav>
-            <div class="nav-container">
-                <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                    <span>Fidan</span>
-                </div>
-                <div class="links">
-                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
-                    <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
-                    <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Me</a></div>
-                </div>
-                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>demo Fidan's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Fidan</span>
             </div>
-            <div class="dropdown">
-                <div class="links">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Skills</a>
-                    <a href="">Services</a>
-                    <a href="">Blogs</a>
-                    <a href="">Contact Me</a>
-                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#footer">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="#skills">Skills</a>
+                <a href="">Services</a>
+                <a href="">Blogs</a>
+                <a href="">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="./my_img/my-img.jpeg" alt="my-image">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Fidan</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A Front-End developer with a passion for coding and problem-solving. As a college student, I’m constantly exploring the exciting world of technology, and I’m fueled by the thrill of learning new things every day. Whether I’m diving into JavaScript, experimenting with new frameworks, or creating stunning web designs, I’m always pushing myself to build innovative and user-friendly experiences. I love teaching others and sharing my knowledge, and I’m on a mission to inspire others to fall in love with coding, just as I have! </p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/fidanveliyeva" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/fidan-veliyeva-5762a9316/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button>Download CV</button>
+                    </div>
                 </div>
             </div>
-        </nav>
-            <section>
-                <div class="main-container">
-                    <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-                        <img src="./my_img/my-img.jpeg" alt="my-image">
+        </section>
+
+        <!-- about section -->
+        <div id="about">
+            <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
+                <h2>About Me</h2>
+                <div class="about-content" data-aos="flip-left" data-aos-duration="1000">
+                    <p>Hey! I'm Fidan, a passionate Front-End Developer dedicated to building beautiful and user-friendly websites. I believe in writing clean, efficient code.👩🏻‍💻</p>
+                </div>
+                <div class="about-content" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                    <p>I love exploring new web technologies, from JavaScript and React to modern CSS techniques, and I'm constantly learning to improve my skills.🚀</p>
+                </div>
+                <div class="about-content" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                    <p>When I’m not coding, I enjoy sharing my knowledge with others, working on personal projects, and growing as a developer. Let’s create something amazing together!✨</p>
+                </div>
+            </div>
+        
+        </div>
+
+            <!-- skills section -->
+        <div id="skills">
+            <div class="skills-container" data-aos="fade-up" data-aos-duration="1000">
+                <h2>My Skills</h2>
+                <div class="skills-list">
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
                     </div>
-                    <div class="content">
-                        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Fidan</span></h1>
-                        <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
-                        <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A Front-End developer with a passion for coding and problem-solving. As a college student, I’m constantly exploring the exciting world of technology, and I’m fueled by the thrill of learning new things every day. Whether I’m diving into JavaScript, experimenting with new frameworks, or creating stunning web designs, I’m always pushing myself to build innovative and user-friendly experiences. I love teaching others and sharing my knowledge, and I’m on a mission to inspire others to fall in love with coding, just as I have! </p>
-                        <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                            <a href="https://github.com/fidanveliyeva" target="_blank" ><i class="fa-brands fa-github"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/fidan-veliyeva-5762a9316/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        </div>
-                        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                            <button>Download CV</button>
-                        </div>
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+                        <i class="fa-brands fa-react"></i>
+                        <p>React.js</p>
+                    </div>
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
+                        <i class="fa-brands fa-node"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <p>Git & GitHub</p>
+                    </div>
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1200">
+                        <i class="fa-brands fa-js-square"></i> <!-- You can add custom icons for Next.js -->
+                        <p>Next.js</p>
+                    </div>
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1400">
+                        <i class="fa-solid fa-cogs"></i> <!-- Tailwind CSS icon or use custom icon -->
+                        <p>Tailwind CSS</p>
+                    </div>
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1600">
+                        <i class="fa-solid fa-palette"></i> <!-- Figma icon or use custom icon -->
+                        <p>Figma</p>
+                    </div>
+                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1800">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <p>Bootstrap</p>
                     </div>
                 </div>
-            </section>
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-            AOS.init({offset:0});
-            </script>
-            <script>
-                function hamburg(){
-                    const navbar = document.querySelector(".dropdown")
-                    navbar.style.transform = "translateY(0px)"
-                }
-                function cancel(){
-                    const navbar = document.querySelector(".dropdown")
-                    navbar.style.transform = "translateY(-500px)"
-                }
-            </script>
-    </body>
-    </html>
+            </div>  
+        </div>
+        <!-- skills section end -->
+
+
+         <!-- footer -->
+
+         <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-section contact">
+                    <h3>Contact Me</h3>
+                    <p><strong>Email:</strong> <a href="mailto:fidan@example.com">veliyevafidan355@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+123456789">+994 *******</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fidan-veliyeva-5762a9316/" target="_blank">linkedin.com/in/fidanvaliyeva</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/fidanveliyeva" target="_blank">github.com/fidanvaliyeva</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fidan Valiyeva | All rights reserved</p>
+            </div>
+        </footer>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>

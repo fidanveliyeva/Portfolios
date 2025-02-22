@@ -11,7 +11,7 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
 }
 nav{
@@ -267,4 +267,208 @@ section{
         width: 80%;
         margin-bottom: 0px;
     }
+}
+
+
+
+/* ==================================== */
+#skills {
+    /* background: linear-gradient(135deg, #1e293b, #334155); */
+    /* background: linear-gradient(to right, rgb(128, 125, 125), rgb(220, 192, 163)); */
+    /* background: linear-gradient(to right, rgb(240, 240, 240), rgb(254, 215, 173)); */
+    background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
+
+    padding: 80px 20px;
+    text-align: center;
+    color: black;
+}
+.skills-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: black; /* Yellow for contrast */
+}
+
+.skills-list {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    height: 120px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill:hover {
+    scale: 0.9;
+    cursor: pointer;
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.skill i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #6b5f2b;
+}
+
+.skill p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* about */
+/* About Section Styling */
+#about {
+    padding: 80px 20px;
+    text-align: center;
+    color: #f3f4f6; /* Light gray text for contrast */
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.about-container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-content {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.about-content:hover {
+    scale: 1.05;
+    transition: all 0.3s;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 60px 15px;
+    }
+
+    .about-container {
+        padding: 30px;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+
+/* footer */
+/* Footer Styling */
+#footer {
+    color: #f3f4f6; /* Light gray text */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.footer-section:hover {
+    transform: translateY(-5px);
+}
+
+.footer-section h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e67e22; /* Light orange color */
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #05214a;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #e67e22; /* Orange links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #f39c12;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #bdc3c7;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
