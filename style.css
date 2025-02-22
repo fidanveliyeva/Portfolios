@@ -83,7 +83,10 @@ nav{
     transition: 0.3s linear;
 }
 .nav-container .contact-btn:hover, .nav-container .contact-btn:hover a{
+    color: white;
     background-color: rgb(109,67, 0);
+}
+.contact-btn a:hover{
     color: white;
 }
 .nav-container .links a:hover{
@@ -472,3 +475,6 @@ section{
 .footer-bottom p {
     margin: 0;
 }
+
+
+
