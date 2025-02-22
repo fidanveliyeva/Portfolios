@@ -302,20 +302,35 @@ section{
     padding: 0 20px;
 }
 
-.skill {
+/* .skill {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     height: 120px;
     border-radius: 15px;
     text-align: center;
-    transition: all 0.3s ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease ;
+}
+
+.skill:hover {    
+    transform: translateY(-5px);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+} */
+
+.skill{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    height: 120px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease; 
 }
 
 .skill:hover {
-    scale: 0.9;
+    transform: translateY(-5px); 
     cursor: pointer;
-    transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.2);
 }
 
