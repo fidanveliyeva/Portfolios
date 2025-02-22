@@ -19,7 +19,7 @@
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
+                <!-- <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div> -->
                 <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#footer">Contact Me</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
@@ -54,7 +54,7 @@
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
                     <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                        <button>Download CV</button>
+                        <button id="downloadCV">Download CV</button>
                     </div>
                 </div>
             </div>
@@ -127,6 +127,46 @@
         </div>
         <!-- skills section end -->
 
+<!-- services section -->
+<div id="services">
+    <div class="services-container" data-aos="fade-up" data-aos-duration="1000">
+        <h2>My Services</h2>
+        <div class="services-list">
+            <div class="service" data-aos="flip-left" data-aos-duration="1000">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Creating modern, responsive, and user-friendly websites. I specialize in front-end development with HTML, CSS, JavaScript, and React.</p>
+            </div>
+            <div class="service" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Mobile Development</h3>
+                <p>Building responsive web applications that work seamlessly across all devices and platforms, ensuring a mobile-friendly experience for users.</p>
+            </div>
+            <div class="service" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Performance Optimization</h3>
+                <p>Improving the speed and performance of websites through optimization techniques like lazy loading, image compression, and more.</p>
+            </div>
+            <div class="service" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing user interfaces and user experiences that are not only visually appealing but also intuitive and easy to navigate.</p>
+            </div>
+            <div class="service" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
+                <i class="fa-brands fa-github"></i>
+                <h3>Git & Version Control</h3>
+                <p>Utilizing Git and GitHub to manage projects, track changes, and collaborate with teams to ensure smooth project management.</p>
+            </div>
+            <div class="service" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>Cloud Services Integration</h3>
+                <p>Integrating cloud technologies into your projects for scalability, reliability, and efficiency in application deployment and data storage.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- services section end -->
+
 
          <!-- footer -->
 
@@ -162,35 +202,19 @@
 
         //    cv button
 
-    document.addEventListener("DOMContentLoaded", function () {
-    const downloadButton = document.createElement("button");
-    downloadButton.textContent = "Download CV";
-    downloadButton.style.backgroundColor = "#3182ce";
-    downloadButton.style.color = "white";
-    downloadButton.style.border = "none";
-    downloadButton.style.padding = "10px 20px";
-    downloadButton.style.fontSize = "16px";
-    downloadButton.style.cursor = "pointer";
-    downloadButton.style.borderRadius = "5px";
+        document.addEventListener("DOMContentLoaded", function () {
+    const downloadButton = document.getElementById("downloadCV");
     
     downloadButton.addEventListener("click", function () {
-        const fileUrl = "./my-cv/Fidan Valiyeva CV.pdf";  // Ensure this path is correct
+        const fileUrl = "./my-cv/Fidan Valiyeva CV.pdf";  // Ensure the path is correct
         const link = document.createElement("a");
         link.href = fileUrl;
-        link.download = "Fidan Valiyeva CV.pdf";  // Only the file name here
+        link.download = "Fidan Valiyeva CV.pdf";  // File name for download
         link.target = "_blank";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     });
-
-    const container = document.createElement("div");
-    container.style.display = "flex";
-    container.style.justifyContent = "center";
-    container.style.marginTop = "20px";
-    container.appendChild(downloadButton);
-    
-    document.body.appendChild(container);  // Appending the container to the body
 });
 
         </script>
