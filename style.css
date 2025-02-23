@@ -277,11 +277,7 @@ section{
 
 /* ==================================== */
 #skills {
-    /* background: linear-gradient(135deg, #1e293b, #334155); */
-    /* background: linear-gradient(to right, rgb(128, 125, 125), rgb(220, 192, 163)); */
-    /* background: linear-gradient(to right, rgb(240, 240, 240), rgb(254, 215, 173)); */
     background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
-
     padding: 80px 20px;
     text-align: center;
     color: black;
@@ -290,34 +286,18 @@ section{
     font-size: 2.5rem;
     margin-bottom: 40px;
     font-weight: bold;
-    color: black; /* Yellow for contrast */
+    color: black;
 }
 
 .skills-list {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-    grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+    grid-template-columns: repeat(5, 1fr); 
 
     gap: 20px;
     justify-content: center;
     padding: 0 20px;
 }
 
-/* .skill {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    height: 120px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease ;
-}
-
-.skill:hover {    
-    transform: translateY(-5px);
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.2);
-} */
 
 .skill{
     background: rgba(255, 255, 255, 0.1);
@@ -350,7 +330,7 @@ section{
 #about {
     padding: 80px 20px;
     text-align: center;
-    color: #f3f4f6; /* Light gray text for contrast */
+    color: #f3f4f6; 
 }
 
 .about-container {
@@ -436,7 +416,7 @@ section{
 /* footer */
 /* Footer Styling */
 #footer {
-    color: #f3f4f6; /* Light gray text */
+    color: #f3f4f6; 
     padding: 60px 20px;
     text-align: center;
 }
@@ -460,7 +440,7 @@ section{
 .footer-section h3 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #e67e22; /* Light orange color */
+    color: #e67e22;
     margin-bottom: 20px;
 }
 
@@ -472,7 +452,7 @@ section{
 }
 
 .footer-section a {
-    color: #e67e22; /* Orange links */
+    color: #e67e22; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -503,8 +483,7 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* flex-wrap: wrap; */
-    gap: 10px; /* Reduced space between cards */
+    gap: 10px; 
 }
 .services-list{
     display: flex;
@@ -518,7 +497,7 @@ section{
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    position: relative; /* Add this to make sure the transformation works */
+    position: relative;
 }
 
 .service:hover {
@@ -532,7 +511,7 @@ section{
 .service h2 {
     margin: 0 auto;
     text-align: center;
-    color: #2f8d8d; /* Soft greenish-blue for headings */
+    color: #2f8d8d; 
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -542,14 +521,14 @@ section{
     margin-bottom: 20px;
 }
 .service p {
-    color: #666666; /* Dark gray for paragraph text */
+    color: #666666; 
     font-size: 1rem;
     margin-bottom: 20px;
 }
 
 .service a {
     color: #ffffff;
-    background-color: #2f8d8d; /* Same soft greenish-blue for button */
+    background-color: #2f8d8d; 
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -557,6 +536,6 @@ section{
 }
 
 .service a:hover {
-    background-color: #238c8c; /* Darker greenish-blue on hover */
+    background-color: #238c8c; 
 }
 /* responsive */
