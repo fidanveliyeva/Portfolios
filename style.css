@@ -414,7 +414,6 @@ section{
 
 
 /* footer */
-/* Footer Styling */
 #footer {
     color: #f3f4f6; 
     padding: 60px 20px;
@@ -538,4 +537,3 @@ section{
 .service a:hover {
     background-color: #238c8c; 
 }
-/* responsive */
