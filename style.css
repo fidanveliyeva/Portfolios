@@ -486,6 +486,7 @@ section{
 }
 .services-list{
     display: flex;
+    justify-content: center;
 }
 .service {
     width: 250px;
