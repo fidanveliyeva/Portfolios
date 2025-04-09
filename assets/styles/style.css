@@ -236,42 +236,7 @@ section{
  box-shadow: 0 0 40px rgb(109,67, 0);
  cursor: pointer;
 }
-@media (max-width:884px) {
-    body{
-        overflow-y: visible;
-    }
-    nav .logo{
-        position: absolute;
-        top: 16px;
-        left: 15px;
-        font-size: 1.5rem;
-    }
-    .main-container{
-        display: flex;
-        flex-direction: column;
-    }
-    .nav-container .links{
-        display: none;
-    }
-    .hamburg,.cancel{
-        display: block;
-    }
-    .main-container .content{
-        width: 80%;
-    }
-    .social-links i{
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-    }
-    .cancel{
-        color: white;
-    }
-    .main-container .image{
-        width: 80%;
-        margin-bottom: 0px;
-    }
-}
+
 
 
 
@@ -306,13 +271,13 @@ section{
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background 0.3s ease; 
 }
 
 .skill:hover {
-    transform: translateY(-5px); 
     cursor: pointer;
     background: rgba(255, 255, 255, 0.2);
+    scale: 1.03;
+    transition: all 0.3s !important;
 }
 
 .skill i {
@@ -328,6 +293,7 @@ section{
 /* about */
 /* About Section Styling */
 #about {
+    margin-top: 60px;
     padding: 80px 20px;
     text-align: center;
     color: #f3f4f6; 
@@ -367,9 +333,8 @@ section{
 
 .about-content:hover {
     scale: 1.05;
-    transition: all 0.3s;
+    transition: all 0.3s !important;
     cursor: pointer;
-    transform: translateY(-5px);
 }
 
 .about-content p {
@@ -393,25 +358,6 @@ section{
         transform: translateY(0);
     }
 }
-
-@media (max-width: 768px) {
-    #about {
-        padding: 60px 15px;
-    }
-
-    .about-container {
-        padding: 30px;
-    }
-
-    #about h2 {
-        font-size: 2rem;
-    }
-
-    .about-content p {
-        font-size: 1rem;
-    }
-}
-
 
 /* footer */
 #footer {
@@ -489,6 +435,7 @@ section{
     justify-content: center;
 }
 .service {
+    padding: 15px;
     width: 250px;
     height: 300px;
     margin: 10px; 
@@ -496,14 +443,13 @@ section{
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
     position: relative;
 }
 
 .service:hover {
-    transition: all 0.3s;
+    scale: 1.03;
+    transition: all 0.3s !important;
     cursor: pointer;
-    transform: translateY(-20px);
 }
 
 
@@ -537,4 +483,95 @@ section{
 
 .service a:hover {
     background-color: #238c8c; 
+}
+
+/* responsive */
+/* Responsive Design */
+
+/* === Responsive Design === */
+/* Media query for max-width 1024px (Tablets) */
+@media (max-width: 1024px) {
+    .about-container {
+        max-width: 900px;
+        padding: 20px;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+    }
+
+    .service {
+        width: 45%;
+        margin: 20px;
+    }
+
+    .footer-section {
+        padding: 15px;
+    }
+}
+
+/* Media query for max-width 768px (Tablets and smaller devices) */
+@media (max-width: 768px) {
+    .about-container {
+        max-width: 650px;
+    }
+
+    #about h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .service {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        padding: 10px;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+}
+
+/* Media query for max-width 480px (Mobile devices) */
+@media (max-width: 480px) {
+    .about-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    #about h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+    }
+
+    .service {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-section {
+        padding: 8px;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
 }
