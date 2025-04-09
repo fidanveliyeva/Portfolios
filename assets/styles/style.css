@@ -14,6 +14,11 @@ body{
     /* overflow: hidden; */
     background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
 }
+.container{
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
 nav{
     width: 100%;
     height: 10vh;
@@ -242,6 +247,7 @@ section{
 
 /* ==================================== */
 #skills {
+    border-radius: 30px;
     background: linear-gradient(to right, rgb(255,255,255), rgb(254,215,173));
     padding: 80px 20px;
     text-align: center;
@@ -488,90 +494,4 @@ section{
 /* responsive */
 /* Responsive Design */
 
-/* === Responsive Design === */
-/* Media query for max-width 1024px (Tablets) */
-@media (max-width: 1024px) {
-    .about-container {
-        max-width: 900px;
-        padding: 20px;
-    }
 
-    #about h2 {
-        font-size: 2rem;
-    }
-
-    .about-content p {
-        font-size: 1.1rem;
-    }
-
-    .service {
-        width: 45%;
-        margin: 20px;
-    }
-
-    .footer-section {
-        padding: 15px;
-    }
-}
-
-/* Media query for max-width 768px (Tablets and smaller devices) */
-@media (max-width: 768px) {
-    .about-container {
-        max-width: 650px;
-    }
-
-    #about h2 {
-        font-size: 1.8rem;
-    }
-
-    .about-content p {
-        font-size: 1rem;
-    }
-
-    .service {
-        width: 80%;
-        margin: 10px 0;
-    }
-
-    .services {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        padding: 10px;
-    }
-
-    .footer-container {
-        text-align: center;
-    }
-}
-
-/* Media query for max-width 480px (Mobile devices) */
-@media (max-width: 480px) {
-    .about-container {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    #about h2 {
-        font-size: 1.5rem;
-    }
-
-    .about-content p {
-        font-size: 0.9rem;
-    }
-
-    .service {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .footer-section {
-        padding: 8px;
-    }
-
-    .footer-container {
-        text-align: center;
-    }
-}
