@@ -466,6 +466,10 @@ h1 {
   .flip-card-back p {
     font-size: 14px; /* Уменьшаем размер текста */
   }
+  .flip-card-inner.flipped {
+    transform: rotateY(180deg); /* Поверните карточку на 180 градусов */
+  }
+  
   .contact-form {
     padding: 10px;
   }
