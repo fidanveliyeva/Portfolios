@@ -1,217 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>Fidan's Personal Portfolio</title>
-    <link rel="icon" type="image/png" href="./assets/images/Screenshot 2025-02-25 225650.png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./assets/styles/responsive.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fidan Valiyeva Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-<div class="container">
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>Fidan</span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#services">Services</a></div>
-                <!-- <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div> -->
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#footer">Contact Me</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+  <div class="container">
+    <div class="sidebar">
+        <img src="./assets/images/my-img.jpeg" alt="Avatar" />
+        <h2>Fidan Valiyeva</h2>
+        <p class="role">Web developer</p>
+        <div class="info">
+          <div><strong>Email:</strong> <span>veliyevafidan355@gmail.com</span></div>
+          <div><strong>Phone:</strong> <span>+994 *** ***</span></div>
+          <div><strong style="margin-right: 10px;">GitHub:</strong> <a href="https://github.com/fidanveliyeva" target="_blank">github.com/fidanvaliyeva</a></div>
+          <div><strong style="margin-right: 10px;">LinkedIn:</strong> <a href="https://www.linkedin.com/in/fidan-veliyeva-5762a9316/" target="_blank">linkedin.com/in/fidanvaliyeva</a></div>
         </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Services</a>
-                <a href="">Blogs</a>
-                <a href="">Contact Me</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
-        </div>
-    </nav>
-
-        <section>
-            <div class="main-container">
-                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-                    <img src="./assets/images/my-img.jpeg" alt="my-image">
-                </div>
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Fidan</span></h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
-                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A Front-End developer with a passion for coding and problem-solving. As a college student, I’m constantly exploring the exciting world of technology, and I’m fueled by the thrill of learning new things every day. Whether I’m diving into JavaScript, experimenting with new frameworks, or creating stunning web designs, I’m always pushing myself to build innovative and user-friendly experiences. I love teaching others and sharing my knowledge, and I’m on a mission to inspire others to fall in love with coding, just as I have! </p>
-                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                        <a href="https://github.com/fidanveliyeva" target="_blank" ><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/ve1iyevaaa/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/fidan-veliyeva-5762a9316/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                        <button id="downloadCV">Download CV</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- about section -->
-        <div id="about">
-            <div class="about-container" data-aos="fade-up" data-aos-duration="1000">
-                <h2>About Me</h2>
-                <div class="about-content" data-aos="flip-left" data-aos-duration="1000">
-                    <p>Hey! I'm Fidan, a passionate Front-End Developer dedicated to building beautiful and user-friendly websites. I believe in writing clean, efficient code.👩🏻‍💻</p>
-                </div>
-                <div class="about-content" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                    <p>I love exploring new web technologies, from JavaScript and React to modern CSS techniques, and I'm constantly learning to improve my skills.🚀</p>
-                </div>
-                <div class="about-content" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                    <p>When I’m not coding, I enjoy sharing my knowledge with others, working on personal projects, and growing as a developer. Let’s create something amazing together!✨</p>
-                </div>
-            </div>
-        
-        </div>
-
-            <!-- skills section -->
-        <div id="skills">
-            <div class="skills-container" data-aos="fade-up" data-aos-duration="1000">
-                <h2>My Skills</h2>
-                <div class="skills-list">
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000">
-                        <i class="fa-brands fa-html5"></i>
-                        <p>HTML</p>
-                    </div>
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <p>CSS</p>
-                    </div>
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                        <i class="fa-brands fa-js"></i>
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-                        <i class="fa-brands fa-react"></i>
-                        <p>React.js</p>
-                    </div>
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
-                        <i class="fa-brands fa-node"></i>
-                        <p>Node.js</p>
-                    </div>
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <p>Git & GitHub</p>
-                    </div>
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1200">
-                        <i class="fa-brands fa-js-square"></i> <!-- You can add custom icons for Next.js -->
-                        <p>Next.js</p>
-                    </div>
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1400">
-                        <i class="fa-solid fa-cogs"></i> <!-- Tailwind CSS icon or use custom icon -->
-                        <p>Tailwind CSS</p>
-                    </div>
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1600">
-                        <i class="fa-solid fa-palette"></i> <!-- Figma icon or use custom icon -->
-                        <p>Figma</p>
-                    </div>
-                    <div class="skill" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1800">
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <p>Bootstrap</p>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        <!-- skills section end -->
-
-<!-- services section -->
-<div id="services">
-    <div class="services-container" data-aos="fade-up" data-aos-duration="1000">
-        <h2>My Services</h2>
-        <div class="services-list">
-            <div class="service" data-aos="flip-left" data-aos-duration="1000">
-                <i class="fa-solid fa-laptop-code"></i>
-                <h3>Web Development</h3>
-                <p>Creating modern, responsive, and user-friendly websites. I specialize in front-end development with HTML, CSS, JavaScript, and React.</p>
-            </div>
-            <div class="service" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                <i class="fa-solid fa-mobile-screen"></i>
-                <h3>Coding Tutoring & Mentorship</h3>
-                <p>Helping aspiring developers and students build strong front-end development skills through structured learning, hands-on projects, and real-world problem-solving.</p>
-            </div>
-           
-            <div class="service" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-                <i class="fa-solid fa-palette"></i>
-                <h3>UI/UX Design</h3>
-                <p>Designing user interfaces and user experiences that are not only visually appealing but also intuitive and easy to navigate.</p>
-            </div>
-            <div class="service" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
-                <i class="fa-brands fa-github"></i>
-                <h3>Git & Version Control</h3>
-                <p>Utilizing Git and GitHub to manage projects, track changes, and collaborate with teams to ensure smooth project management.</p>
-            </div>
-            
-        </div>
-    </div>
-</div>
-<!-- services section end -->
-
-
-         <!-- footer -->
-
-         <footer id="footer"  data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
-            <div class="footer-container">
-                <div class="footer-section contact">
-                    <h3>Contact Me</h3>
-                    <p><strong>Email:</strong> <a href="mailto:fidan@example.com">veliyevafidan355@gmail.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+123456789">+994 *******</a></p>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fidan-veliyeva-5762a9316/" target="_blank">linkedin.com/in/fidanvaliyeva</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/fidanveliyeva" target="_blank">github.com/fidanvaliyeva</a></p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Fidan Valiyeva | All rights reserved</p>
-            </div>
-        </footer>
-</div>
-        
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-        AOS.init({offset:0});
-        </script>
-        <script>
-            function hamburg(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(0px)"
-            }
-            function cancel(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(-500px)"
-            }
-
-        //    cv button
-
-    document.addEventListener("DOMContentLoaded", function () {
-    const downloadButton = document.getElementById("downloadCV");
+      </div>
+      <div class="main">
+        <nav>
+          <a href="./index.html" class="active">About</a>
+          <a href="./skills.html">Skills</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
     
-    downloadButton.addEventListener("click", function () {
-        const fileUrl = "./assets/cv/Fidan Valiyeva CV (5).pdf";  // Ensure the path is correct
-        const link = document.createElement("a");
-        link.href = fileUrl;
-        link.download = "Fidan Valiyeva CV.pdf";  // File name for download
-        link.target = "_blank";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
-});
+        <div class="section">
+          <h1>About Me</h1>
+          <p>Hey! I'm Fidan, a passionate Front-End Developer dedicated to building beautiful and user-friendly websites. I believe in writing clean, efficient code.👩🏻‍💻</p>
+          <br />
+          <p>I love exploring new web technologies, from JavaScript and React to modern CSS techniques, and I'm constantly learning to improve my skills.🚀</p>
+          <p>When I’m not coding, I enjoy sharing my knowledge with others, working on personal projects, and growing as a developer. Let’s create something amazing together!✨</p>
+        </div>
+        <button id="downloadCV">Download CV</button>
 
-        </script>
+
+
+        <div class="section">
+            <h1> My Hobbies & Interests</h1>
+            <div class="cards">
+              <div class="card">
+                <i class="fas fa-camera icon"></i>
+                <h3>Photography</h3>
+                <p>I enjoy capturing moments and playing with light and composition. Nature and urban shots are my favorite.</p>
+              </div>
+             
+              <div class="card">
+                <i class="fas fa-gamepad icon"></i>
+                <h3>Gaming</h3>
+                <p>I enjoy story-driven games and competitive matches — they help me relax and recharge.</p>
+              </div>
+              <div class="card">
+                <i class="fas fa-music icon"></i>
+                <h3>Music</h3>
+                <p>I listen to a wide range of music — from electronic to classical — and sometimes create my own beats.</p>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+  </div>
+  <script src="./assets/js/cv.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="./assets/js/gsap.js"></script>
+
 </body>
 </html>

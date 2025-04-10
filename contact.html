@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fidan Valiyeva Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+        <img src="./assets/images/my-img.jpeg" alt="Avatar" />
+        <h2>Fidan Valiyeva</h2>
+        <p class="role">Web developer</p>
+        <div class="info">
+          <div><strong>Email:</strong> <span>veliyevafidan355@gmail.com</span></div>
+          <div><strong>Phone:</strong> <span>+994 *** ***</span></div>
+          <div><strong style="margin-right: 10px;">GitHub:</strong> <a href="https://github.com/fidanveliyeva" target="_blank">github.com/fidanvaliyeva</a></div>
+          <div><strong style="margin-right: 10px;">LinkedIn:</strong> <a href="https://www.linkedin.com/in/fidan-veliyeva-5762a9316/" target="_blank">linkedin.com/in/fidanvaliyeva</a></div>
+        </div>
+      </div>
+      <div class="main">
+        <nav>
+          <a href="./index.html" class="active">About</a>
+          <a href="./skills.html">Skills</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <form id="contact-form" class="contact-form" action="send-message.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+          
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+          
+
+  </div>
+  <script src="./assets/js/cv.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="./assets/js/gsap.js"></script>
+</body>
+</html>
