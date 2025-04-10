@@ -1,78 +1,53 @@
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .nav-container {
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-    .nav-container .links {
-        gap: 2rem;
-    }
-    .main-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .main-container .image {
-        width: 50%;
-    }
-    .content {
-        width: 70%;
-    }
+/* @media (max-width: 1024px){
 }
-
-@media (max-width: 768px) {
-    .nav-container .links {
-        display: none;
-    }
-    .hamburg {
-        display: block;
-    }
-    .dropdown {
-        transform: translateY(0);
-        display: none;
-    }
-    .dropdown.active {
-        display: block;
-    }
-    .main-container .image {
+@media (max-width: 780px){
+}
+@media (max-width: 480px){
+    .main-container{
         width: 60%;
     }
-    .content {
-        width: 80%;
+    .content p{
+        width: 50%;
     }
-}
+} */
 
-@media (max-width: 480px) {
-    .nav-container {
-        padding: 0 10px;
-    }
-    .hamburg {
-        font-size: 1.5rem;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
+
+
+@media (max-width: 1024px) {
     .main-container {
-        padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-    .main-container .image {
-        width: 80%;
+  
+    .image img {
+      width: 250px;
     }
-    .content {
-        width: 100%;
+  
+    .desktop-links {
+      display: none;
     }
+  
+    .hamburg {
+      display: block;
+      color: rgb(109, 67, 0);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo span {
+      font-size: 1.5rem;
+    }
+  
+    .typewriter {
+      font-size: 1rem;
+    }
+  
     .content h1 {
-        font-size: 1.8rem;
+      font-size: 1.8rem;
     }
-    .content .typewriter span {
-        font-size: 1.5rem;
+  
+    .social-links a {
+      font-size: 1.3rem;
     }
-    .social-links i {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.2rem;
-    }
-    .content button {
-        width: 80%;
-        font-size: 90%;
-    }
-}
+  }

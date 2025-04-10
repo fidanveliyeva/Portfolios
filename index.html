@@ -14,53 +14,61 @@
 <div class="container">
     <nav>
         <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>Fidan</span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#services">Services</a></div>
-                <!-- <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div> -->
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#footer">Contact Me</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+          <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <span>Fidan</span>
+          </div>
+          <div class="links desktop-links">
+            <div class="link" data-aos="fade-up"><a href="#">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-delay="100"><a href="#about">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-delay="200"><a href="#skills">Skills</a></div>
+            <div class="link" data-aos="fade-up" data-aos-delay="300"><a href="#services">Services</a></div>
+            <div class="link contact-btn" data-aos="fade-up" data-aos-delay="400"><a href="#footer">Contact Me</a></div>
+          </div>
+          <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
         </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Skills</a>
-                <a href="">Services</a>
-                <a href="">Blogs</a>
-                <a href="">Contact Me</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
+      
+        <div class="dropdown" id="dropdownMenu">
+          <div class="mobile-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#footer">Contact Me</a>
+            <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+          </div>
         </div>
-    </nav>
+      </nav>
+      
 
-        <section>
-            <div class="main-container">
-                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-                    <img src="./assets/images/my-img.jpeg" alt="my-image">
-                </div>
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Fidan</span></h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
-                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A Front-End developer with a passion for coding and problem-solving. As a college student, I’m constantly exploring the exciting world of technology, and I’m fueled by the thrill of learning new things every day. Whether I’m diving into JavaScript, experimenting with new frameworks, or creating stunning web designs, I’m always pushing myself to build innovative and user-friendly experiences. I love teaching others and sharing my knowledge, and I’m on a mission to inspire others to fall in love with coding, just as I have! </p>
-                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                        <a href="https://github.com/fidanveliyeva" target="_blank" ><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/ve1iyevaaa/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/fidan-veliyeva-5762a9316/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                        <button id="downloadCV">Download CV</button>
-                    </div>
-                </div>
+      <section>
+        <div class="main-container">
+          <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+            <img src="./assets/images/my-img.jpeg" alt="my-image" />
+          </div>
+          <div class="content">
+            <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+              Hey I'm <span>Fidan</span>
+            </h1>
+            <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+              I'm a <span></span>
             </div>
-        </section>
+            <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+              A passionate Front-End Developer dedicated to building beautiful and user-friendly websites. I believe in writing clean, efficient code. 👩🏻‍💻
+            </p>
+            <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+              <a href="https://github.com/fidanveliyeva" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/ve1iyevaaa/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/fidan-veliyeva-5762a9316/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+              <button id="downloadCV">Download CV</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
 
         <!-- about section -->
         <div id="about">
@@ -78,7 +86,7 @@
             </div>
         
         </div>
-
+<!--  -->
             <!-- skills section -->
         <div id="skills">
             <div class="skills-container" data-aos="fade-up" data-aos-duration="1000">
