@@ -244,7 +244,9 @@ h1 {
   color: #f3f3f3;
 }
 
-
+.flip-card-inner.flipped {
+  transform: rotateY(180deg); /* Поверните карточку на 180 градусов */
+}
 /* contact */
 .contact-form {
   margin-top: 30px;
@@ -393,6 +395,9 @@ h1 {
   .submit-btn {
     padding: 10px 15px; /* Уменьшаем отступы на кнопке */
   }
+  flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 /* Для устройств с шириной экрана до 480px (мобильные устройства) */
@@ -466,9 +471,7 @@ h1 {
   .flip-card-back p {
     font-size: 14px; /* Уменьшаем размер текста */
   }
-  .flip-card-inner.flipped {
-    transform: rotateY(180deg); /* Поверните карточку на 180 градусов */
-  }
+  
   
   .contact-form {
     padding: 10px;
