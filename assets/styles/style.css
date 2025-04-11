@@ -77,8 +77,10 @@ nav {
 
 
 nav a {
-  font-size: 20px;
-  color: #a8d5ba;
+  background: none;
+  font-size: 22px;
+  color: rgb(160, 155, 155);
+  /* color: #b3dcc4; */
   text-decoration: none;
   font-weight: 600;
   padding-bottom: 5px;
@@ -107,7 +109,8 @@ nav a:hover::before {
 
 nav a:hover {
   color: #facc15; 
-}
+} 
+
 
 h1 {
   color: #fff;
@@ -130,6 +133,7 @@ h1 {
 }
 .card h3 {
   color: #e1c22a;
+  /* color: rgb(107, 205, 21); */
   margin-bottom: 10px;
   font-size: 18px;
 }
